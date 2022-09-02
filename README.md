@@ -1,6 +1,6 @@
 # developers-loaders-reversed
 
-Nothing to special to say, enjoy the contect.
+Nothing to special to say, enjoy the content.
 
 Gravity contains discord token grabber so watch out.
 
