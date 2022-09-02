@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BBF2287-655B-4633-8A34-436F54EAC6A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BRUTALITY</RootNamespace>
+    <AssemblyName>BRUTALITY</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>BRUTALITY.ico</ApplicationIcon>
+    <StartupObject>WindowsFormsApp1.DOTA2EMELHOR</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroSet\u0020UI" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Siticone.UI" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="BRUTALITY_ProcessedByFody.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="herhe\Properties\Resources.cs" />
+    <Compile Include="KeyAuth\api.cs" />
+    <Compile Include="KeyAuth\encryption.cs" />
+    <Compile Include="KeyAuth\json_wrapper.cs" />
+    <Compile Include="KeyAuth\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyAuth\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="unknown\bagulhotensodaquebradaloko264812.cs" />
+    <Compile Include="unknown\Config.cs" />
+    <Compile Include="unknown\ConfigContainer.cs" />
+    <Compile Include="unknown\DebugWindow.cs" />
+    <Compile Include="unknown\eocrimeoucremesenaodevesnaoteme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unknown\eocrimeoucremesenaodevesnaoteme.Designer.cs">
+      <DependentUpon>eocrimeoucremesenaodevesnaoteme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unknown\Extensions.cs" />
+    <Compile Include="unknown\Form1.cs" />
+    <Compile Include="unknown\IniFile.cs" />
+    <Compile Include="unknown\IntUtil.cs" />
+    <Compile Include="unknown\leonardo.cs" />
+    <Compile Include="unknown\PixelSearcher.cs" />
+    <Compile Include="unknown\Settings.cs" />
+    <Compile Include="WindowsFormsApp1\DOTA2EMELHOR.cs" />
+    <Compile Include="WindowsFormsApp1\Properties\Resources.cs" />
+    <Compile Include="WindowsFormsApp1\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Costura\costura\dll.compressed" />
+    <EmbeddedResource Include="Costura\costura\pdb.compressed" />
+    <EmbeddedResource Include="Costura\metadata" />
+    <EmbeddedResource Include="Costura\metroset ui\dll.compressed" />
+    <EmbeddedResource Include="Costura\siticone\ui\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\diagnosticsource\dll.compressed" />
+    <EmbeddedResource Include="herhe.unknown.bagulhotensodaquebradaloko264812.resources" />
+    <EmbeddedResource Include="herhe.unknown.eocrimeoucremesenaodevesnaoteme.resources" />
+    <EmbeddedResource Include="herhe.unknown.Login.resources" />
+    <EmbeddedResource Include="herhe\Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="WindowsFormsApp1\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
